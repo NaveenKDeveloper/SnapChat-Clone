@@ -2,7 +2,7 @@ import React, { useRef, useCallback} from 'react'
 import Webcam from 'react-webcam'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import { useDispatch} from 'react-redux'
-import { setCameraImage } from './features/CameraSlice';
+import { setCameraImage } from '../features/CameraSlice';
 import { useHistory } from 'react-router-dom'
 import './Capture.css'
 

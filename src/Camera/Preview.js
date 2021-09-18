@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { selectcameraImage, resetCameraImage } from "./features/CameraSlice";
+import { selectcameraImage, resetCameraImage } from "../features/CameraSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
@@ -14,8 +14,8 @@ import TimerIcon from "@material-ui/icons/Timer";
 import SendIcon from "@material-ui/icons/Send";
 import { v4 as uuid } from "uuid";
 import firebase from "firebase/compat";
-import { db, storage } from "./firebase";
-import { selectUser } from './features/appSlice';
+import { db, storage } from "../firebase";
+import { selectUser } from '../features/appSlice';
 
 function Preview() {
   const cameraImage = useSelector(selectcameraImage);

@@ -3,9 +3,9 @@ import { Avatar } from '@material-ui/core'
 import "./Chat.css"
 import StopRoundedIcon from "@material-ui/icons/StopRounded";
 import ReactTimeago from 'react-timeago';
-import { selectImage } from './features/appSlice';
+import { selectImage } from '../features/appSlice';
 import { useDispatch } from 'react-redux';
-import { db } from './firebase';
+import { db } from '../firebase';
 import { useHistory } from 'react-router-dom';
 
 function Chat({ id, profilePic, username, timestamp, imageUrl, read }){

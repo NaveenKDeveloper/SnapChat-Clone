@@ -1,10 +1,10 @@
 import React ,{useEffect} from "react";
-import Capture from "./Capture";
+import Capture from "./Camera/Capture";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Preview from './Preview';
-import Chats from './Chats'
+import Preview from './Camera/Preview';
+import Chats from './Chat/Chats'
 import "./App.css";
-import ChatView from './ChatView'
+import ChatView from './Chat/ChatView'
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/appSlice';
 import Login from './Login'
@@ -43,15 +43,16 @@ function App() {
           <Route exact path="/">
             <Capture />
           </Route>
+          <Route path="/preview">
+            <Preview />
+          </Route>
           <Route  path="/chats/view">
             <ChatView />
           </Route>
           <Route  path="/chats">
             <Chats />
           </Route>
-          <Route path="/preview">
-            <Preview />
-          </Route>
+          
             
           </Switch>
           </div>
