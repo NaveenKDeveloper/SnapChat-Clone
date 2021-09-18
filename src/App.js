@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Preview from './Preview';
 import Chats from './Chats'
 import "./App.css";
+import ChatView from './ChatView'
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
           <Route exact path="/">
             <Capture />
           </Route>
-          <Route exact path="/chats">
+          <Route  path="/chats/view">
+            <ChatView />
+          </Route>
+          <Route  path="/chats">
             <Chats />
           </Route>
           <Route path="/preview">
