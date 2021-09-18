@@ -37,7 +37,8 @@ function App() {
         {!user ? (
           <Login />
         ):(
-        <div className="app_body">
+        <div className="app__body">
+          <div className="app__bodyBackground">
          <Switch>
           <Route exact path="/">
             <Capture />
@@ -53,6 +54,7 @@ function App() {
           </Route>
             
           </Switch>
+          </div>
         </div>
         )}
       </Router>
