@@ -1,12 +1,7 @@
 import firebase from  "firebase/compat";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCIwXRs2FB29TVif7Ix7KsaUVsFYXg-6gI",
-  authDomain: "snapchat-clone-b1312.firebaseapp.com",
-  projectId: "snapchat-clone-b1312",
-  storageBucket: "snapchat-clone-b1312.appspot.com",
-  messagingSenderId: "256254474715",
-  appId: "1:256254474715:web:44c07d0c3d9e4d56ab8ffe"
+  // add your config from firebase
 };
 
 const firebaseApp= firebase.initializeApp(firebaseConfig) // created
